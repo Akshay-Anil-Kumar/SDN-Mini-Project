@@ -48,7 +48,8 @@ pingall
 ### Step 4: Generate Traffic
 
 ```bash
-iperf h1 h2
+h2 iperf -s &
+h1 iperf -c 10.0.0.2
 ```
 
 ---
